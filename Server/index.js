@@ -12,7 +12,7 @@ Port = process.env.PORT || 5000
 app.use(express.json());
 app.use(
   cors({
-    origin:  "https://ecommerce-inventory-dashboard-frontend.onrender.com" , 
+    origin:  "https://e-comm-managment-frontend-app.vercel.app" , 
     credentials: true               
   })
 )
