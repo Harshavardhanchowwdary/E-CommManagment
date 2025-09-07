@@ -1,0 +1,85 @@
+.supplier-form-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(20, 20, 40, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+
+.supplier-form {
+  background: linear-gradient(135deg, #1b1f4b, #3d1a5e);
+  padding: 2rem;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 0 20px rgba(160, 108, 213, 0.4);
+  color: #e0d7ff;
+}
+
+.supplier-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #d0b3ff;
+}
+
+.supplier-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2f5c;
+  color: #fff;
+}
+
+.supplier-form input::placeholder {
+  color: #b8a9d1;
+}
+
+.supplier-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.supplier-form .cancel-btn {
+  background-color: #444;
+}
+
+.supplier-form button:hover {
+  background-color: #8e2de2;
+}
+
+/* Light theme overrides */
+.light .supplier-form {
+  background: linear-gradient(135deg, #f5f5ff, #eae6ff);
+  color: #2a1b3d;
+}
+
+.light .supplier-form input {
+  background-color: #f0eaff;
+  color: #2a1b3d;
+}
+
+.light .supplier-form input::placeholder {
+  color: #6a0dad;
+}
+
+.light .supplier-form button {
+  background-color: #6a0dad;
+}
+
+.light .supplier-form button:hover {
+  background-color: #8e2de2;
+}

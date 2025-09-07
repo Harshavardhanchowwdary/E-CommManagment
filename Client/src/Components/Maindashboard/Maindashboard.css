@@ -1,0 +1,91 @@
+.MainDashboardcard {
+  padding: 1.5rem;
+  background-color: #1b1f4b;
+  color: #e0d7ff;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(160, 108, 213, 0.3);
+  margin-bottom: 2rem;
+  height: 70vh;
+  overflow: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #6a0dad transparent;
+}
+
+/* WebKit Scrollbar Styling */
+.MainDashboardcard::-webkit-scrollbar {
+  width: 6px;
+}
+
+.MainDashboardcard::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.MainDashboardcard::-webkit-scrollbar-thumb {
+  background-color: #6a0dad;
+  border-radius: 10px;
+}
+
+.dashboard-section {
+  margin-bottom: 2rem;
+}
+
+.dashboard-section h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #d0b3ff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.6rem 1rem;
+  background-color: #2a2f5c;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-item:hover {
+  background-color: #6a0dad;
+}
+
+.dashboard-item i {
+  color: #d0b3ff;
+}
+
+/* Light Theme Overrides */
+.light .MainDashboardcard {
+  background-color: #f5f5ff;
+  color: #2a1b3d;
+  scrollbar-color: #6a0dad transparent;
+}
+
+.light .MainDashboardcard::-webkit-scrollbar-thumb {
+  background-color: #6a0dad;
+}
+
+.light .dashboard-section h2 {
+  color: #6a0dad;
+}
+
+.light .dashboard-item {
+  background-color: #eae6ff;
+}
+
+.light .dashboard-item:hover {
+  background-color: #d6c2ff;
+}
+
+.light .dashboard-item i {
+  color: #6a0dad;
+}

@@ -1,0 +1,100 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1b1f4b, #3d1a5e);
+  height: 100vh;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.register-form {
+  background: linear-gradient(135deg, #1b1f4b, #3d1a5e);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(160, 108, 213, 0.4);
+  width: 400px;
+  transition: box-shadow 0.3s ease;
+}
+
+.register-form:hover {
+  box-shadow: 0 0 30px rgba(160, 108, 213, 0.6);
+}
+
+.register-form h2 {
+  text-align: center;
+  color: #d0b3ff;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  text-align: center;
+  font-size: 0.95rem;
+  color: #b8a9d1;
+  margin-bottom: 1.5rem;
+}
+
+.register-form input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  background-color: #2a2f5c;
+  color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.register-form input::placeholder {
+  color: #b8a9d1;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: #8e2de2;
+  box-shadow: 0 0 8px rgba(142, 45, 226, 0.6);
+}
+
+.register-form button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #6a0dad;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.register-form button:hover {
+  background-color: #8e2de2;
+  transform: scale(1.03);
+}
+
+.register-form button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(142, 45, 226, 0.6);
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.login-link a {
+  color: #d0b3ff;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.login-link a:hover {
+  color: #ffffff;
+}
+
