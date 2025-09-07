@@ -26,7 +26,7 @@ Mongoose.connect(process.env.MONGO_URL)
 
     app.use('/api/Ecommanagement',authRouter)
     app.get('/',(req,res)=>{
-        res.sendFile(Path.join(__dirname,'build','index.html'));
+        res.send("Backend Server is Working");
     })
     app.listen(Port,(err)=>{
         if(!err){
